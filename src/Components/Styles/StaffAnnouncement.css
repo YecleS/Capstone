@@ -1,0 +1,10 @@
+.staff-announcement {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.staff-announcement p {
+    font-size: 5rem;
+}

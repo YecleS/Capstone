@@ -1,0 +1,79 @@
+.pay-roll-modal__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.377);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.pay-roll-modal__forms-wrapper {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.pay-roll-modal__close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.pay-roll-modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.pay-roll-modal__input {
+    width: 350px;
+    padding: 0.3rem 1.2rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pay-roll-modal__input:focus {
+    border: 1px solid var(--blue-color);
+}
+
+.pay-roll-modal__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pay-roll-modal__input:focus {
+    border: 1px solid var(--blue-color);
+}
+
+.pay-roll-modal__submit {
+    width: 350px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: var(--blue-color);
+    padding: 0.5em 1em;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.pay-roll-modal__submit:hover {
+    transform: scale(1.03);
+}

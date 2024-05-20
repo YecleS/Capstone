@@ -1,0 +1,10 @@
+.ledger {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ledger p {
+    font-size: 5rem;
+}

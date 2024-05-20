@@ -1,0 +1,80 @@
+.approve-leave-modal__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.377);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.approve-leave-modal__forms-wrapper {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.approve-leave-modal__close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.approve-leave-modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.approve-leave-modal__textarea {
+    width: 100%;
+    height: 200px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    resize: none;
+    border-radius: 5px;
+}
+
+.approve-leave-modal__textarea:hover {
+    border: 1px solid var(--blue-color);
+}
+
+.approve-leave-modal__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.approve-leave-modal__input:focus {
+    border: 1px solid var(--blue-color);
+}
+
+.add-cart-modal__submit {
+    width: 350px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: var(--blue-color);
+    padding: 0.5em 1em;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.add-cart-modal__submit:hover {
+    transform: scale(1.03);
+}
