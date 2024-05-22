@@ -21,3 +21,21 @@
 .card__icon {
     font-size: 35px;
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .card__number {
+        font-size: 1rem;
+    }
+    
+    .card__description {
+        font-size: 0.9rem;
+    }
+    
+    .card__icon {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+}

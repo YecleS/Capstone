@@ -85,7 +85,7 @@
     border-top-left-radius: 10px;
 }
 
-.add-products__table-th:nth-child(6) {
+.add-products__table-th:nth-child(7) {
     border-top-right-radius: 10px;
 }
 
@@ -97,4 +97,15 @@
 
 .add-products__table-body-tr:nth-child(even) {
     background: #e6eafa;
+}
+
+.edit-products__icon {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.delete__icon {
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
 }

@@ -75,4 +75,37 @@
     font-size: 1.2rem;
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .dashboard__bar-chart-title {
+        font-size: 1rem;
+    }
+
+    .dashboard__bar-chart-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .dashboard__best-sellers-title {
+        font-size: 1rem;
+    }
+
+    .dashboard__pie-chart-title {
+        font-size: 1rem;
+    }
+
+    .dashboard__pie-chart-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .dashboard__table-th {
+        font-size: 0.9rem;
+    }
+
+    .dashboard__table-td {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+}
 

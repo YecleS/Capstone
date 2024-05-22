@@ -3,11 +3,10 @@ import '../Styles/StaffMenu.css';
 import { Routes, Route } from 'react-router-dom';
 import StaffHeader from '../UIComponents/StaffHeader';
 import StaffSidebar from '../UIComponents/StaffSidebar';
-import StaffAnnouncement from './StaffAnnouncement';
 import StaffInventory from '../Pages/InventoryProducts'
 import StaffSales from '../Pages/StaffSales';
-import StaffExpenses from '../Pages/StaffExpenses';
-import StaffLeave from '../Pages/StaffLeave';
+import StaffRestock from './StaffRestock';
+import StaffUtilities from './StaffUtilities';
 
 function StaffMenu() {
   return (
@@ -21,11 +20,10 @@ function StaffMenu() {
           </aside>
           <main className='staff-homepage__main-content'>
             <Routes>
-              <Route index element ={<StaffAnnouncement />}/>
-              <Route path='staff-inventory' element={<StaffInventory />}/>
+              <Route index element={<StaffInventory />}/>
               <Route path='staff-sales' element={<StaffSales />}/>
-              <Route path='staff-expenses' element={<StaffExpenses />}/>
-              <Route path='staff-leave' element={<StaffLeave />}/>
+              <Route path='staff-restock' element={<StaffRestock />}/>
+              <Route path='staff-utilities' element={<StaffUtilities />}/>
             </Routes>
           </main>
         </div>    

@@ -11,6 +11,12 @@ export const AddSupplierModal = ({onSubmit, onClose}) => {
                 <input type='text' placeholder='Contacts...' className='add-supplier-modal__input'></input>
                 <input type='text' placeholder='Email...' className='add-supplier-modal__input'></input>
                 <input type='text' placeholder='Location...' className='add-supplier-modal__input'></input>
+                <select className='add-supplier-modal__input'>
+                  <option selected hidden disabled>Supplier Type...</option>
+                  <option>Accessories</option>
+                  <option>Aquariums</option>
+                  <option>Soil</option>
+                </select>
             <div className='add-supplier-modal__footer'>
                 <button className='add-supplier-modal__submit' onClick={onSubmit}>Add Supplier</button>
             </div>          

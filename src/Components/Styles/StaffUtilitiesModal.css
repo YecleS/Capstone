@@ -1,4 +1,4 @@
-.staff-expenses-modal__container {
+.staff-utilities-modal__container {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,16 +8,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
 }
 
-.staff-expenses-modal__forms-wrapper {
+.staff-utilities-modal__forms-wrapper {
     background: white;
     padding: 2rem 3rem;
     border-radius: 10px;
     position: relative;
 }
 
-.staff-expenses-modal__close {
+.staff-utilities-modal__close {
     position: absolute;
     top: 5px;
     right: 20px;
@@ -25,7 +26,7 @@
     cursor: pointer;
 }
 
-.staff-expenses-modal__content {
+.staff-utilities-modal__content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +35,7 @@
     margin-top: 45px;
 }
 
-.staff-expenses-modal__input {
+.staff-utilities-modal__input {
     width: 350px;
     padding: 0.3rem 1.2rem;
     font-size: 1rem;
@@ -44,11 +45,11 @@
     transition: all 0.3s ease;
 }
 
-.staff-expenses-modal__input:focus {
+.staff-utilities-modal__input:focus {
     border: 1px solid var(--blue-color);
 }
 
-.staff-expenses-modal__submit {
+.staff-utilities-modal__submit {
     width: 350px;
     font-size: 1rem;
     outline: none;
@@ -62,6 +63,6 @@
     cursor: pointer;
 }
 
-.staff-expenses-modal__submit:hover {
+.staff-utilities-modal__submit:hover {
     transform: scale(1.03);
 }

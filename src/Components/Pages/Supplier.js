@@ -3,6 +3,8 @@ import '../Styles/Supplier.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { AddSupplierModal } from '../UIComponents/AddSupplierModal';
+import EditSupplierIcon from '../UIComponents/EditSupplierIcon';
+import DeleteIcon from '../UIComponents/DeleteIcon';
 
 function Supplier() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -42,6 +44,8 @@ function Supplier() {
               <th className='supplier__table-th'>Contacts</th>
               <th className='supplier__table-th'>Email</th>
               <th className='supplier__table-th'>Location</th>
+              <th className='supplier__table-th'>Supplier Type</th>
+              <th className='supplier__table-th'></th>
             </tr>
           </thead>
           <tbody>
@@ -51,6 +55,8 @@ function Supplier() {
               <td className='supplier__table-td'>09217892775</td>
               <td className='supplier__table-td'>FishTrading@gmail.com</td>
               <td className='supplier__table-td'>Laguna</td>
+              <td className='supplier__table-td'>Aquariums</td>
+              <td className='supplier__table-td'><EditSupplierIcon /> <DeleteIcon /></td>
             </tr>
             <tr className='supplier__table-body-tr'>
               <td className='supplier__table-td'>2</td>
@@ -58,6 +64,8 @@ function Supplier() {
               <td className='supplier__table-td'>09217892775</td>
               <td className='supplier__table-td'>LagunaAqua@gmail.com</td>
               <td className='supplier__table-td'>Laguna</td>
+              <td className='supplier__table-td'>Accessories</td>
+              <td className='supplier__table-td'><EditSupplierIcon /> <DeleteIcon /></td>
             </tr>
             <tr className='supplier__table-body-tr'>
               <td className='supplier__table-td'>3</td>
@@ -65,6 +73,8 @@ function Supplier() {
               <td className='supplier__table-td'>09217892775</td>
               <td className='supplier__table-td'>FishLaguna@gmail.com</td>
               <td className='supplier__table-td'>Laguna</td>
+              <td className='supplier__table-td'>Accessories</td>
+              <td className='supplier__table-td'><EditSupplierIcon /> <DeleteIcon /></td>
             </tr>
             <tr className='supplier__table-body-tr'>
               <td className='supplier__table-td'>4</td>
@@ -72,6 +82,8 @@ function Supplier() {
               <td className='supplier__table-td'>09217892775</td>
               <td className='supplier__table-td'>JCY@gmail.com</td>
               <td className='supplier__table-td'>Laguna</td>
+              <td className='supplier__table-td'>Soil Substrate</td>
+              <td className='supplier__table-td'><EditSupplierIcon /> <DeleteIcon /></td>
             </tr>
           </tbody>
         </table>

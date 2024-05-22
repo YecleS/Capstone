@@ -85,7 +85,7 @@
     border-top-left-radius: 10px;
 }
 
-.supplier__table-th:nth-child(5) {
+.supplier__table-th:nth-child(7) {
     border-top-right-radius: 10px;
 }
 
@@ -97,4 +97,14 @@
 
 .supplier__table-body-tr:nth-child(even) {
     background: #e6eafa;
+}
+
+.edit-supplier__icon {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.delete__icon {
+    font-size: 1.1rem;
+    cursor: pointer;
 }

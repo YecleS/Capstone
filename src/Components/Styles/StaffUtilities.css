@@ -1,17 +1,14 @@
-.staff-expenses {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.staff-utilities {
     height: 100%;
 }
 
-.staff-expenses__controls-wrapper {
+.staff-utilities__controls-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.staff-expenses__input {
+.staff-utilities__input {
     padding: 0.3rem 1rem;
     width: 350px;
     font-size: 0.9rem;
@@ -21,17 +18,17 @@
     transition: all 0.3s ease;
 }
 
-.staff-expenses__input:focus {
+.staff-utilities__input:focus {
     border: 1px solid var(--blue-color);
 }
 
-.staff-expenses__right-controls-wrapper {
+.staff-utilities__right-controls-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.staff-expenses__category {
+.staff-utilities__category {
     width: 200px;
     padding: 0.3rem 1rem;
     border-radius: 5px;
@@ -43,11 +40,11 @@
     cursor: pointer;
 }
 
-.staff-expenses__category:focus {
+.staff-utilities__category:focus {
     border: 1px solid var(--blue-color);
 }
 
-.staff-expenses__add-button {
+.staff-utilities_add-button {
     padding: 0.4rem 1rem;
     border-radius: 5px;
     border: none;
@@ -61,22 +58,22 @@
     cursor: pointer;
 }
 
-.staff-expenses__add-button:hover {
+.staff-utilities_add-button:hover {
     transform: scale(1.02);
 }
 
 
-.staff-expenses__table-wrapper {
-    height: 100%;
+.staff-utilities__table-wrapper {
+    margin-top: 30px;
+    height: 92%;
 }
 
-.staff-expenses__table {
+.staff-utilities__table {
     width: 100%;
     border-collapse: collapse;  
 }
 
-
-.staff-expenses__table-th {
+.staff-utilities__table-th {
     text-align: left;
     padding: 0.5rem 1rem;
     background: var(--blue-color);
@@ -85,20 +82,20 @@
     font-size: 1.1rem;
 }
 
-.staff-expenses__table-th:nth-child(1) {
+.staff-utilities__table-th:nth-child(1) {
     border-top-left-radius: 10px;
 }
 
-.staff-expenses__table-th:nth-child(5) {
+.staff-utilities__table-th:nth-child(5) {
     border-top-right-radius: 10px;
 }
 
-.staff-expenses__table-td {
+.staff-utilities__table-td {
     text-align: left;
     padding: 0.5rem 1rem;
     font-weight: 500;
 }
 
-.staff-expenses__table-body-tr:nth-child(even) {
+.staff-utilities__table-body-tr:nth-child(even) {
     background: #e6eafa;
 }

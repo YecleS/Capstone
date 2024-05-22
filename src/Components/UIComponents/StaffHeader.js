@@ -7,14 +7,12 @@ import { faBell, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import { StaffFileLeave } from './StaffFileLeave';
 
 function StaffHeader() {
   const navigate = useNavigate();
 
   const [isAccountDropdownOpen, setIsAccountDropdownOpen] = useState(false);
   const [isNotificationDropdownOpen, isSetNotificationDropdownOpen] = useState(false);
-  const [isFileLeaveModalOpen, isSetFileLeaveModalOpen] = useState(false);
 
 
   const openStaffDropdownMenu = () => {
@@ -35,14 +33,6 @@ function StaffHeader() {
     isSetNotificationDropdownOpen(false);
   };
 
-  const openFileLeaveModal = () => {
-    isSetFileLeaveModalOpen(true);
-    
-  };
-
-  const closeFileLeaveModal = () => {
-    isSetFileLeaveModalOpen(false)
-  };
 
   const logout = () => {
     const isConfirmed = window.confirm('Are you sure you want to logout?');
@@ -78,8 +68,6 @@ function StaffHeader() {
 
           {isAccountDropdownOpen && (
             <div className='staff-header__staff-account-dropdown'>
-              <li className='staff-header__staff-account-dropdown-link' onClick={openFileLeaveModal}>File Leave</li>
-
                 <li className='staff-header__staff-account-dropdown-link' onClick={logout}>
                   Logout
                 </li>
@@ -88,7 +76,6 @@ function StaffHeader() {
 
         </div>
       </div>
-      {isFileLeaveModalOpen &&<StaffFileLeave onSubmit={closeFileLeaveModal} onClose={closeFileLeaveModal}/>}
     </div>
   )
 }

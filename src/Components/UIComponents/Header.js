@@ -7,7 +7,6 @@ import { faBell, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import { StaffFileLeave } from './StaffFileLeave';
 
 function Header() {
   const navigate = useNavigate();

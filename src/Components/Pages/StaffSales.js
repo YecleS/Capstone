@@ -10,6 +10,9 @@ function StaffSales() {
       <input type='text' placeholder='Search...' className='staff-sales__input-search'></input>
     </div>
     <div className='staff-sales__inventory-wrapper'>
+      <div className='staff-sales__table-controls'>
+        <p className='staff-sales__table-title'>Inventory</p>
+      </div>  
       <table className='staff-sales__inventory-table'>
         <thead>
           <tr>
@@ -93,6 +96,9 @@ function StaffSales() {
 
     <div className='staff-sales__cart-wrapper'>
       <div className='staff-sales__cart-table-wrapper'>
+        <div className='staff-sales__table-controls'>
+          <p className='staff-sales__table-title'>Sales Cart</p>
+        </div>  
         <table className='staff-sales__cart-table'>
             <thead>
               <tr>
